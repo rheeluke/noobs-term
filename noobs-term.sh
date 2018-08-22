@@ -120,7 +120,11 @@ echo
 if [ "$distro" = 'Ubuntu' ]; then
     if ! command -v nvim; then
         echo "Adding Neovim Repository..."
+        if [ $(lsb_release -sr) = "14.04" ]; then
+        /usr/bin/sudo apt-add-repository ppa:neovim-ppa/unstable -y 1> /dev/null
+        else
         /usr/bin/sudo apt-add-repository ppa:neovim-ppa/stable -y 1> /dev/null
+        fi
         echo "Done"
     fi
 fi

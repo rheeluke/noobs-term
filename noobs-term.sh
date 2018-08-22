@@ -38,7 +38,7 @@ dependencies=" \
     "
 
 dotfiles_dir="$HOME/.dotfiles" # dotfiles directory
-dotfiles_repo="https://github.com/aaronkjones/noobs-term-dotfiles.git" # dotfiles repo
+dotfiles_repo="https://github.com/rheeluke/noobs-term-dotfiles.git" # dotfiles repo
 nvim_config="$HOME/.config/nvim/init.vim" # neovim config location
 platform="unknown" # default to unknown platform
 
@@ -198,7 +198,7 @@ echo "Done"
 echo
 # install imp theme for zsh
 echo "Installing Imp theme for Zsh..."
-curl -so "$HOME/.oh-my-zsh/themes/imp.zsh-theme" https://raw.githubusercontent.com/aaronkjones/Imp/master/imp.zsh-theme
+curl -so "$HOME/.oh-my-zsh/themes/imp.zsh-theme" https://raw.githubusercontent.com/rheeluke/Imp/master/imp.zsh-theme
 echo "Done"
 echo
 # install nord theme for gnome terminal
